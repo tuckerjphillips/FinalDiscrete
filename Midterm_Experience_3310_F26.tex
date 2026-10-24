@@ -1,4 +1,4 @@
-\documentclass[10pt, AMS Euler]{article}
+	\documentclass[10pt, AMS Euler]{article}
 \textheight=9.25in \textwidth=7in \topmargin=-.75in
 \oddsidemargin=-0.25in
 \evensidemargin=-0.25in
@@ -265,7 +265,25 @@
 		\includegraphics[scale=0.4]{Puma_and_temple}
 	\end{center}
 	
-	
+	 \noindent \textbf{S : SINGLE LEAP}, \textbf{D : DOUBLE LEAP}\\
+    \begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{n} & \textbf{Leap Options} & \textbf{Total Paths} \\ \hline
+        0 & [No Jump] & 1 \\
+        1 & [S] & 1 \\ 
+        2 & [SS, D] & 2 \\
+        3 & [DS, SD, SSS] & 3 \\
+        4 & [DD, DSS, SSD, SDS, SSSS] & 5 \\
+        5 & [DDS, DSSS, DSD, SDD, SSSD, SDSS, SSDS, SSSSS] & 8 \\
+        \cdots & \cdots & \cdots \\ \hline
+        \end{tabular}
+        \caption{Initial Leap Options for n = 0 to n = 5}
+        \label{tab:example}
+    \end{table}
+
+    \noindent $P_n$ will continue following this pattern shown in the total paths column. This recursive patterns is idential to the Fibonnacci Sequence, so $P_n$ can be described as $P_n = P(n-1) + P(n-2)$. 
 	
 	\vspace{1em}
 	
@@ -380,9 +398,27 @@
 	\noindent \emph{Confirm or deny, with proof, whether player $A$ (the first player) can always 
 		win if she employs a particular strategy for each move.}
 	
-	\vspace{1em}
-	
-	\noindent \underline{\hspace{5in}}
+	\noindent On a 5 by 6 point grid, there are a total of 49 placements for possible edges. In order to create a $C_4$ cycle on 4 vertices, there needs to be 4 edges placed. 
+
+    \vspace{1em}
+
+    \noindent \textbf{Claim: } Player A can always win if a particular strategy is used. \\
+
+    
+    \noindent \textbf{Proof:} 
+    
+    The strategy that player A needs to employ in order to always win is as follows: 
+
+    \begin{enumerate}
+        \item Begin each game with an opening move between the center two dots. 
+        \item Allow Player B to make edges.
+        \item Player A should always mirror Player B's edges over the center line (horizontal).
+        \item If a line is placed in the center line, mirror the edge over the center column.
+    \end{enumerate}
+
+    \vspace{} 
+
+    \noindent Up to 36 edges can be placed on the grid until a cycle is forced to be made. 
 	
 	\vspace{2em}
 	
