@@ -140,7 +140,12 @@ INPUT C:\Users\tucke\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\eul
 INPUT C:\Users\tucke\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\euex7.tfm
 INPUT C:\Users\tucke\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Users\tucke\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT .\5pointsOnCircleEx.pdf
+INPUT .\5pointsOnCircleEx.pdf
+INPUT .\5pointsOnCircleEx.pdf
 OUTPUT Midterm_Experience_3310_F26.pdf
+INPUT .\5pointsOnCircleEx.pdf
+INPUT .\5pointsOnCircleEx.pdf
 INPUT C:\Users\tucke\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\circle_diamond.jpg
 INPUT .\circle_diamond.jpg
@@ -149,6 +154,11 @@ INPUT .\circle_diamond.jpg
 INPUT .\circle_diamond.jpg
 INPUT .\circle_diamond.jpg
 INPUT .\circle_diamond.jpg
+INPUT .\Puma_and_temple.pdf
+INPUT .\Puma_and_temple.pdf
+INPUT .\Puma_and_temple.pdf
+INPUT .\Puma_and_temple.pdf
+INPUT .\Puma_and_temple.pdf
 INPUT .\Hanoi.png
 INPUT .\Hanoi.png
 INPUT .\Hanoi.png
@@ -156,6 +166,11 @@ INPUT .\Hanoi.png
 INPUT .\Hanoi.png
 INPUT .\Hanoi.png
 INPUT .\Hanoi.png
+INPUT .\Saturator_Grid.pdf
+INPUT .\Saturator_Grid.pdf
+INPUT .\Saturator_Grid.pdf
+INPUT .\Saturator_Grid.pdf
+INPUT .\Saturator_Grid.pdf
 INPUT C:\Users\tucke\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
 INPUT Midterm_Experience_3310_F26.aux
 INPUT C:\Users\tucke\AppData\Local\MiKTeX\fonts\pk\ljfour\public\concrete\dpi600\ccr8.pk

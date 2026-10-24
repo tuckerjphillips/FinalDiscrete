@@ -1,5 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1792878213.04729 "c:/git/FinalDiscrete/Midterm_Experience_3310_F26.tex" "Midterm_Experience_3310_F26.pdf" "Midterm_Experience_3310_F26" 1792878213.94271 2
+["pdflatex"] 1792878369.08266 "c:/git/FinalDiscrete/Midterm_Experience_3310_F26.tex" "Midterm_Experience_3310_F26.pdf" "Midterm_Experience_3310_F26" 1792878369.86275 0
+  "5pointsOnCircleEx.pdf" 1792878183 11279 9d0022fef2da1f75a8fce06aae03638c ""
   "C:/Users/tucke/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1789057787 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/tucke/AppData/Local/MiKTeX/fonts/pk/ljfour/public/concrete/dpi600/ccr10.pk" 1788285721 10108 bd8833d9c3abbb4db0918ba1143185cb ""
   "C:/Users/tucke/AppData/Local/MiKTeX/fonts/pk/ljfour/public/concrete/dpi600/ccr8.pk" 1788901647 8032 25b124571abfcc87cf68a862f5d43fea ""
@@ -91,13 +92,12 @@
   "C:/Users/tucke/AppData/Local/Programs/MiKTeX/tex/latex/tools/theorem.sty" 1761901070 4956 87ac606ac012523d678e7d9b4c5b7e5d ""
   "C:/Users/tucke/AppData/Local/Programs/MiKTeX/tex/latex/tools/thp.sty" 1761901070 1908 8892e0e2406a99a1f872525174baef2e ""
   "C:/Users/tucke/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Figures/5pointsOnCircleEx" 0 -1 0 ""
-  "Figures/Puma_and_temple" 0 -1 0 ""
-  "Figures/Saturator_Grid" 0 -1 0 ""
   "Hanoi.png" 1792877074 12797 9bfa6fffc4b0c98e42b858ec5a924001 ""
-  "Midterm_Experience_3310_F26.aux" 1792878213 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
-  "Midterm_Experience_3310_F26.tex" 1792878209 16532 b1a6c9fad879e96ca301799f211d4267 ""
-  "c:/git/FinalDiscrete/Midterm_Experience_3310_F26.tex" 1792878209 16532 b1a6c9fad879e96ca301799f211d4267 ""
+  "Midterm_Experience_3310_F26.aux" 1792878369 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
+  "Midterm_Experience_3310_F26.tex" 1792878368 16508 825963377533470652e4204ea1165660 ""
+  "Puma_and_temple.pdf" 1792878183 390069 2eb6ae1858301292e69081964da7f7e6 ""
+  "Saturator_Grid.pdf" 1792878183 7292 3e4268bb82b21e23eeb5397f2fd6ba31 ""
+  "c:/git/FinalDiscrete/Midterm_Experience_3310_F26.tex" 1792878368 16508 825963377533470652e4204ea1165660 ""
   "circle_diamond.jpg" 1792867091 248662 3a2e33e95bdf1ce35de25546c4158619 ""
   (generated)
   "Midterm_Experience_3310_F26.aux"
