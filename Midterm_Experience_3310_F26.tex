@@ -6,6 +6,9 @@
 \usepackage{graphicx} %to import pictures
 \usepackage{amsmath, amssymb}
 \usepackage{theorem, concrete, multicol, color}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
 
 
 \setlength{\intextsep}{5mm} \setlength{\textfloatsep}{5mm}
@@ -243,6 +246,72 @@
 	\noindent{\bf SE 2.2.}  Count the number of shortest paths from Center and Main to $X$ North and $Y$ East.  A more erudite way to pose this problem is as follows: count paths from $(0,0)$ to $(X,Y)$ using steps of the form $R: (x,y) \mapsto (x+1,y)$ or $U:(x,y) \mapsto (x,y+1)$.  So paths trace rectilinear ``curves'' in the first quadrant of the Cartesian coordinate system that visit only integer-valued coordinates. \\
 	
 	\vspace{1em}
+
+	\noindent \textbf{Proof:} In order to arrive at $(X,Y)$ from $(0,0)$ we will always end up having to take $Y$ steps to the East or $R$ and $X$ steps to the North or $U$. For a few smaller $(X,Y)$ coordinates we can find the number of paths easily enough. To get to $(0,1)$ there is 1 path, we just take one step to the North. To get to $(1,0)$ there is also only 1 path, we just take one step to the East. To get to $(1,1)$ we can follow either of the two previous paths with an additional move to the North or East. We can follow this logic further and we find that the number of paths to $(X,Y)$ which we'll call $P(X,Y)=P(X-1,Y)+P(X,Y-1)$. If we start to populate a graph with these path numbers we start to notice that we can see Pascal's triangle as seen below.\\
+    \begin{center}
+        \begin{tikzpicture}
+        \begin{axis}[
+        x=1.5cm, y=1.5cm,
+        xtick={0,1,...,5},
+        ytick={1,...,5},
+        axis y line=middle, % new
+        axis x line=bottom,% new
+        axis line style = {-},
+        grid=major,
+        enlarge x limits={abs=0.4,upper},
+        enlarge y limits={abs=0.4,upper},
+        ]
+        \addplot[blue, mark=*,only marks,
+        visualization depends on={value \thisrow{Name}\as\name},
+        nodes near coords = {$\name$},
+        nodes near coords align={south west},
+        ] table[x=X,y=Y] {
+        X   Y   Name
+        0   0   1
+        0   1   1
+        0   2   1
+        0   3   1
+        0   4   1
+        0   5   1
+        1   0   1
+        2   0   1
+        3   0   1
+        4   0   1
+        5   0   1
+        1   1   2
+        2   1   3
+        3   1   4
+        4   1   5
+        5   1   6
+        1   2   3
+        1   3   4
+        1   4   5
+        1   5   6
+        2   2   6
+        2   3   10
+        2   4   15
+        2   5   21
+        3   2   10
+        4   2   15
+        5   2   21
+        3   3   20
+        3   4   35
+        3   5   56
+        4   3   35
+        5   3   56
+        4   4   70
+        4   5   126
+        5   4   126
+        5   5   252
+        };
+        \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    Now that we recognize Pascal's triangle it's not too big of a leap to assume that we will need to use choose to count the number of paths. We need to take a total of $X+Y$ steps no matter what, so if we choose how we want to take $X$ steps and just fill in the rest of the steps with the $Y$ steps we find that the number of paths to $(X,Y)=P(X,Y)=\binom{X+Y}{X}$.
+    
+	\vspace{1em}
+
+	\bigskip
 	
 	\noindent{\bf SE 2.3.}  Walk in a strange way.  Start at Center and Main, thinking of it as the origin $(0,0)$ and take $n$ steps, each of type $R$, $L$, or $U$, with $R$ never followed by $L$ and vice-versa. The steps are defined via $R:(x,y) \mapsto (x+1,y)$, $L:(x,y) \mapsto (x-1,y)$, and $U:(x,y) \mapsto (x, y+1)$.  
 	Determine the number of different paths with $n$ steps.
@@ -277,7 +346,7 @@
         3 & [DS, SD, SSS] & 3 \\
         4 & [DD, DSS, SSD, SDS, SSSS] & 5 \\
         5 & [DDS, DSSS, DSD, SDD, SSSD, SDSS, SSDS, SSSSS] & 8 \\
-        \cdots & \cdots & \cdots \\ \hline
+        $\cdots$ & $\cdots$ & $\cdots$ \\ \hline
         \end{tabular}
         \caption{Initial Leap Options for n = 0 to n = 5}
         \label{tab:example}
@@ -416,8 +485,8 @@
         \item If a line is placed in the center line, mirror the edge over the center column.
     \end{enumerate}
 
-    \vspace{} 
-
+	\bigskip 
+	
     \noindent Up to 36 edges can be placed on the grid until a cycle is forced to be made. 
 	
 	\vspace{2em}
@@ -439,6 +508,28 @@
 	\noindent \textsf{Question:} \emph{In which position (call it $S(n)$) must you be in order to survive?}\\
 	
 	\noindent Examples: $S(4) =1$, $S(7) =7$.
+	
+	\vspace{1em}
+	
+	\noindent \underline{\hspace{5in}}
+
+	\noindent \textbf{Proof:} Let's start  by gathering some data.\\
+
+    \begin{center}
+    \begin{tabular}{l|ccccccccccccccccccccc}\hline
+    {\bf $n$ } & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+    \hline \hline
+    {\bf $S(n)$} & 1 & 1 & 3 & 1 & 3 & 5 & 7 & 1 & 3 & 5 & 7 & 9 & 11 & 13 & 15 & 1 \\
+    \end{tabular}
+    \end{center}
+
+    \noindent From this data we can observe a pattern where on each power of 2 $S(n)$ resets to 1, then in between each power of 2 it counts up to the next odd number.
+
+	\bigskip
+	\noindent From this observation we can generate a function that matches the discovered pattern. We find the function below which describes the pattern. 
+
+	\bigskip
+    $S(n)=2\big(\dfrac{1}{2}+n-2^{\lfloor \log_2n\rfloor}\big)$
 	
 	\vspace{1em}
 	
