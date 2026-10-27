@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.6)  27 OCT 2026 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.6)  27 OCT 2026 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,77 +819,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 482--483
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
 
-LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 512.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
-
-LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 514.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--521
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
-
- []
-
-[7]
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
 (Font)              using `OT1/ccr/bx/n' instead on input line 527.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 529.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--536
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 542.
+
 <Hanoi.png, id=56, 270.00874pt x 120.95187pt>
 File: Hanoi.png Graphic file (type png)
 <use Hanoi.png>
-Package pdftex.def Info: Hanoi.png  used on input line 535.
+Package pdftex.def Info: Hanoi.png  used on input line 550.
 (pdftex.def)             Requested size: 270.00807pt x 120.95157pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 554.
+(Font)              using `OT1/ccr/bx/n' instead on input line 569.
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 560.
+(Font)              using `OT1/ccr/bx/n' instead on input line 575.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 562.
+(Font)              using `OT1/ccr/bx/n' instead on input line 577.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--568
+Underfull \hbox (badness 10000) in paragraph at lines 579--583
 
  []
 
@@ -899,71 +903,71 @@ pdfTeX warning: pdflatex (file ./Saturator_Grid.pdf): PDF inclusion: found PDF v
 <Saturator_Grid.pdf, id=58, 250.9375pt x 203.35976pt>
 File: Saturator_Grid.pdf Graphic file (type pdf)
 <use Saturator_Grid.pdf>
-Package pdftex.def Info: Saturator_Grid.pdf  used on input line 570.
+Package pdftex.def Info: Saturator_Grid.pdf  used on input line 585.
 (pdftex.def)             Requested size: 125.46843pt x 101.67961pt.
 [8 <./Hanoi.png>]
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 573.
+(Font)              using `OT1/ccr/bx/n' instead on input line 588.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--574
-
- []
-
-
-LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 582.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 585.
+(Font)              using `OT1/ccr/bx/n' instead on input line 597.
 
 
-LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 602.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--613
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 624.
+(Font)              using `OT1/ccr/bx/n' instead on input line 600.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--625
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 617.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 628.
+(Font)              using `OT1/ccr/bx/n' instead on input line 639.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
+
+ []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 630.
+(Font)              using `OT1/ccr/bx/n' instead on input line 643.
+
+
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 645.
 
 [9 <./Saturator_Grid.pdf>] [10] (Midterm_Experience_3310_F26.aux)
  ***********
@@ -976,15 +980,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24036 strings out of 467866
- 629852 string characters out of 5418326
+ 24038 strings out of 467866
+ 629906 string characters out of 5418326
  1166436 words of memory out of 5000000
- 52506 multiletter control sequences out of 15000+600000
+ 52508 multiletter control sequences out of 15000+600000
  639561 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,118p,852b,2264s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr7.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr8.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccti10.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr10.pk><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm5.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Midterm_Experience_3310_F26.pdf (10 pages, 890873 bytes).
+Output written on Midterm_Experience_3310_F26.pdf (10 pages, 891373 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
