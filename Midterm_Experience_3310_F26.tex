@@ -315,7 +315,96 @@
 	
 	\noindent{\bf SE 2.3.}  Walk in a strange way.  Start at Center and Main, thinking of it as the origin $(0,0)$ and take $n$ steps, each of type $R$, $L$, or $U$, with $R$ never followed by $L$ and vice-versa. The steps are defined via $R:(x,y) \mapsto (x+1,y)$, $L:(x,y) \mapsto (x-1,y)$, and $U:(x,y) \mapsto (x, y+1)$.  
 	Determine the number of different paths with $n$ steps.
+
+	\bigskip
+	\noindent We started this equation by drawing out the different potential paths that could be taken. I started by drawing out many paths. We decided to start by examining the potential paths the system could take. We quickly see the potential for a recursive formula. The number of possible routes for any n steps is related to the previous problem. 
+
+	\bigskip
+	\noindent
+	I see that the total number of possible routes is P(n) = (number of rights/lefts from P(n-1)) * 2 + (number of ups from P(n-1) * 3). This is because each path that last moved left or right has two options to move in, which each path that last moved up has three options to move in. 
+
+	\bigskip
+	\noindent
+	From this relationship I can figure out how many rights and lefts there were in $P(n-1)$ and how many ups there were in $P(n-1)$. 
 	
+	\bigskip
+	\noindent
+	The number of times $p(n-1)$ moved up is equal to the value of $p(n-2)$. This is because every line in $p(n-2)$ moved up once in $p(n-1)$
+
+	\bigskip
+	\noindent
+	The number of times $p(n-1)$ moved left or right is equal to $p(n-1) - p(n-2)$. This is the total value of $p(n-1)$ with the total number of "ups" subtracted, since any path that did not last move up must have moved left or right.
+
+	\bigskip
+	\noindent
+	Now we can develop the recursive relationship $P(n) = P(n-2) * 3 + (P(n-1) - P(n-2)) * 2$. This simplifies to $P(n) = P(n-2) + 2*P(n-1)$
+
+	\bigskip
+	\noindent
+	We want a closed form solution instead of a recursive relationship. Lets use a characteristic equation. 
+
+	\bigskip
+	\noindent
+	Turn $P(n) = P(n-2) + 2P(n-1)$ into $R^n = 2*R^{n-1} + R^{n-2}$
+
+	\bigskip
+	\noindent
+	Dividing both sides by $R^{n-2}$ we turn that equation into
+
+	\bigskip
+	\noindent
+	$R^2 = 2*R + 1$
+
+	\bigskip
+	\noindent
+	Solving for the quadratic roots of this equation we find the roots are: 
+
+	\bigskip
+	\noindent
+	$R = 2.41421, -0.414214$
+
+
+	\bigskip
+	\noindent
+	Now we know P(n) is of the form $P(n) = A(2.41421)^n + B(-0.414214)^n$
+
+	\bigskip
+	\noindent
+	Lets plug in some of our known stats to find what this value will be. 
+
+	\bigskip
+	\noindent
+	$P(0) = 1 = A + B$
+
+	\bigskip
+	\noindent
+	$P(1) = 3 = A(2.41421) + B(-0.414214)$
+
+	\bigskip
+	\noindent
+	We can solve for $A = 1.20710685527$ and $B = -0.207106855266$. 
+
+	\bigskip
+	\noindent
+	This gives us the final explicit equation of:
+
+	\bigskip
+	\noindent
+	$P(n) = 1.207106*(2.41421)^n - 0.207106*(-0.414214)^n$
+
+	\bigskip
+	\noindent
+	We plugged in various values of n that we had manually found the solutions for, and found this equation lined up for each tested case, proving the equation is true. 
+
+
+
+
+
+
+	
+
+	\bigskip
+	\noindent
 	\noindent{\bf SE 2.4.}  Given what happens when you take the red pill, you choose the blue one ... and turn into a puma ...  and find yourself in the Yucatan peninsula at the base of a Mayan temple.  Whoa.  
 	You find that your puma strength allows you to clear one or two terraces in a single bound.  
 	For reasons known only by the metaphysics of the blue pill, you need to 
