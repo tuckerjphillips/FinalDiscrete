@@ -502,23 +502,35 @@ $$\begin{array}{c|c||c|c|c}
 
 			\noindent Please determine, with an argument for each, a formula for each entry in the table.\\
 
+
+		If there is labeled there wll prpobably be a fatorial
+
+		Onto column will likeely have squeezer {x, k}
+
+		Stars and bars could prove the indistinguishable indistinguishable case
+
+
+
+
+
 		\begin{enumerate}
 			\item $x^n$
+			\item $n^{x_falling}$
 			\item empty
-			\item empty
-			\item empty
+			\item multiset?? Dr. Brown said multisets might exist in this row. 
 			\item $ \binom{x}{n}$ 
-			\item empty
-			\item $\begin{cases} 
-  					1 & \text{if } x = 1 \\ 
-  					xk & \text{if } 1 < x < n \\ 
-  					x! & \text{if } x \geq n  
-					\end{cases}$ 
+			\item multiset?
+			\item Because the elements are indistinguishable we want to look at how the n elemeents in A are grouped into non-empty subsets. We want to sum the different stirling number paritions to see how many different ways we can do this for each different value of k. 
+			$\boxed{\sum_{k=1}^{x} S(n, k)}$
 			\item In the injective case when the distinguishable objects in A are placed in indistinguishable objects in B there is only $\boxed{1}$ possible solution. No matter which order you place each individual A object into each B object all cases will be the same.  
-			\item empty
-			\item $P(n)$ 
+			\item This case matches the description of stirling numbers perfectly. It is a mapping of n elements onto k indistinguishable elements where each element is non-empty.
+			$\boxed{\begin{Bmatrix}
+						n \\
+						k
+			\end{Bmatrix}}$
+			\item In the case with both A and B indistinguishable objects we want a partition of n. We care about how many times the n objects can be divided into seperarte groups. $P(n)$ 
 			\item When both A and B are indistinguishable in the injective case there is only $\boxed{1}$ way to organize. Whatever combination you place one ball into each box all solutions will be the same.
-			\item $P_x(n)$ 
+			\item In this case with indistinguishable objects placed into indistinguishable boxes we can see that there will be some partition of possible combinations. Since the order doesn't matter and we just want a combination. Since we have a maximum of x A objects placed onto n B objects we can figure out there is a integer partition $P_x(n)$ 
 		\end{enumerate}
 
 	
