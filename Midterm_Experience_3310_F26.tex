@@ -479,10 +479,14 @@
     \vspace{1em}
     
     \noindent 2. 
-    $$P_n = \sum_{i=0}^{\lfloor n/2 \rfloor}\binom{n-i}{i}.$$
+    $$P_n = \sum_{i=0}^{\lfloor n/2 \rfloor}\binom{n-i}{i}$$. \\
+    \textbf{Proof:} Essentially, $P_n$ counts the combinations of Single and Double leaps that add to n. If we say that $d$ is the number of double leaps in the sequence, then each $d$ double jumps will go up $2d$ terraces. subtracting that from the total n terraces gives the terraces left over for single leaps, $n - 2d$ (which is also the number of single leaps).
+    So the total number of leaps is the combination of the number of single and double leaps:  $d+n-2d$ or simplified to $n-d$.\\ 
+
+    We can describe a sequence by deciding where the "double jumps" $d$ are for a given  total leap combos $n-d$. This turns out to be $\binom{n-i}{i}$ ways to place them. But there can only by $n/2$ double jumps maximum to reach the top. Summing all of these possibilitees gives us the exact formula above swapping $i$ for $d$: \\ 
+    $$P_n = \sum_{i=0}^{\lfloor n/2 \rfloor}\binom{n-d}{d}$$.
 	
-	\vspace{1em}
-	
+	\vspace{2em}
 	\noindent \underline{\hspace{5in}}
 	
 	
