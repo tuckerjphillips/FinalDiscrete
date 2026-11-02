@@ -32,6 +32,7 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\stirling}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\multiset}[2]{\left(\!\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\!\right)}
 
 %%%%  footnote style %%%%
 
@@ -527,13 +528,20 @@ $$\begin{array}{c|c||c|c|c}
 
 
 		\begin{enumerate}
-			\item $x^n$
-			\item $n^{x_falling}$
+			\item When we have n indistinguishable objects being placed into x distinguishable groups without restriction every object has x group choices where it can go. With n objects this leads to the equation: $\boxed{x^n}$
+			\item When we have n distinguishable objects being placed into x distinguishable groups. The first object has x possible groups where it can be placed. The next object has x - 1 possible places where it can be placed. This pattern will continue where each consequtive ball will have -1 places where it could possibly be placed. The number of group choices can be represented by n. We can represent this pattern as $\boxed{n^{\underline{x}}}$
 			\item empty
-			\item multiset?? Dr. Brown said multisets might exist in this row. 
-			\item $ \binom{x}{n}$ 
-			\item multiset?
-			\item Because the elements are indistinguishable we want to look at how the n elemeents in A are grouped into non-empty subsets. We want to sum the different stirling number paritions to see how many different ways we can do this for each different value of k. 
+			\item We can think of this cell using the stars and bars method. We have $n$ balls and $x-1$ bars to place to create $x$ boxes. So, we have a set of $n+x-1$ objects and we can choose $n$ places to put the balls first, then place the bars. This means that there are $\multiset{x}{n} = \boxed{\binom{n+x-1}{n}}$ ways to do this.
+			\item If $n\geq x$ there is one way. This is because there are more balls than boxes and with it being injective, each box can have at most one ball. If $n<x$ there are $\boxed{\binom{x}{n}}$ ways to distribute the balls. We can think of this as having $x$ boxes and then we choose $n$ of them to receive 1 ball each, and we leave the rest empty.
+			\item 
+			Our first n objects are going to be placed in x predetermined spots since we have to have at least one A object in every B group. After that we have n - x more balls to place in n boxes. Our boxes are distinguishable but our balls are not. This suggests we should use some sort of binomial, where we choose boxes for each ball to go into. 
+
+			Usings stars and bars after placing our initial x each of our n - x balls has x - 1 possible options to go to. 
+			$\binom{(n-x)+x-1}{x-1}$
+			
+			Which can be simplified to $\boxed{\binom{n-1}{x-1}}$
+
+			\item Because the elements are indistinguishable we want to look at how the n elements in A are grouped into non-empty subsets. Each of the individual groups can be represented by a stirling number partion. We want to sum the different stirling number paritions to see how many different ways we can do this for each different value of k. 
 			$\boxed{\sum_{k=1}^{x} S(n, k)}$
 			\item In the injective case when the distinguishable objects in A are placed in indistinguishable objects in B there is only $\boxed{1}$ possible solution. No matter which order you place each individual A object into each B object all cases will be the same.  
 			\item This case matches the description of stirling numbers perfectly. It is a mapping of n elements onto k indistinguishable elements where each element is non-empty.
@@ -541,9 +549,9 @@ $$\begin{array}{c|c||c|c|c}
 						n \\
 						k
 			\end{Bmatrix}}$
-			\item In the case with both A and B indistinguishable objects we want a partition of n. We care about how many times the n objects can be divided into seperarte groups. $P(n)$ 
+			\item In the case with both A and B indistinguishable objects we want a partition of n. We care about how many times the n objects can be divided into seperarte groups. $\boxed{P(n)}$ 
 			\item When both A and B are indistinguishable in the injective case there is only $\boxed{1}$ way to organize. Whatever combination you place one ball into each box all solutions will be the same.
-			\item In this case with indistinguishable objects placed into indistinguishable boxes we can see that there will be some partition of possible combinations. Since the order doesn't matter and we just want a combination. Since we have a maximum of x A objects placed onto n B objects we can figure out there is a integer partition $P_x(n)$ 
+			\item In this case with indistinguishable objects placed into indistinguishable boxes we can see that there will be some partition of possible combinations. Since the order doesn't matter and we just want a combination. Since we have a maximum of x A objects placed onto n B objects we can figure out there is a integer partition $\boxed{P_x(n)}$ 
 		\end{enumerate}
 
 	
