@@ -7,6 +7,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{theorem, concrete, multicol, color}
 \usepackage{pgfplots}
+\usepackage{mathtools}
 \pgfplotsset{compat=1.18}
 
 
@@ -465,7 +466,7 @@
 
     \begin{align*}
         P_n &= \frac{1+\sqrt{5}}{2\sqrt{5}} (\frac{1+\sqrt{5}}{2} )^{n} - \frac{1-\sqrt{5}}{2\sqrt{5}} (\frac{1-\sqrt{5}}{2} )^{n} \\
-        &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{n+1} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{n+1}
+        \Aboxed{P_n &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{n+1} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{n+1}}
     \end{align*}
 	
 	\vspace{1em}
@@ -474,7 +475,7 @@
 
     \begin{align*}
         P_{365} &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{366} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{366} \\
-        &\approx 1.380 \cdot 10^{78}
+        \Aboxed{P_{365} &\approx 1.380 \cdot 10^{78}}
     \end{align*}
 
     \vspace{1em}
@@ -528,9 +529,10 @@ $$\begin{array}{c|c||c|c|c}
 
 
 		\begin{enumerate}
+
 			\item When we have n indistinguishable objects being placed into x distinguishable groups without restriction every object has x group choices where it can go. With n objects this leads to the equation: $\boxed{x^n}$
 			\item When we have n distinguishable objects being placed into x distinguishable groups. The first object has x possible groups where it can be placed. The next object has x - 1 possible places where it can be placed. This pattern will continue where each consequtive ball will have -1 places where it could possibly be placed. The number of group choices can be represented by n. We can represent this pattern as $\boxed{n^{\underline{x}}}$
-			\item empty
+			\item Because both A and B are distinguishable, and "onto" is the surjective case, the squeeze function can be used to partition $n$ elements into exactly $x$ groups ($\stirling{n}{x}$). Multiplying by $x!$ after partitioning gives the number of functions that map the "onto" case: $\boxed{x! \cdot \stirling{n}{x}}$
 			\item We can think of this cell using the stars and bars method. We have $n$ balls and $x-1$ bars to place to create $x$ boxes. So, we have a set of $n+x-1$ objects and we can choose $n$ places to put the balls first, then place the bars. This means that there are $\multiset{x}{n} = \boxed{\binom{n+x-1}{n}}$ ways to do this.
 			\item If $n\geq x$ there is one way. This is because there are more balls than boxes and with it being injective, each box can have at most one ball. If $n<x$ there are $\boxed{\binom{x}{n}}$ ways to distribute the balls. We can think of this as having $x$ boxes and then we choose $n$ of them to receive 1 ball each, and we leave the rest empty.
 			\item 
