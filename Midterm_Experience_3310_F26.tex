@@ -7,6 +7,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{theorem, concrete, multicol, color}
 \usepackage{pgfplots}
+\usepackage{mathtools}
 \pgfplotsset{compat=1.18}
 
 
@@ -464,7 +465,7 @@
 
     \begin{align*}
         P_n &= \frac{1+\sqrt{5}}{2\sqrt{5}} (\frac{1+\sqrt{5}}{2} )^{n} - \frac{1-\sqrt{5}}{2\sqrt{5}} (\frac{1-\sqrt{5}}{2} )^{n} \\
-        &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{n+1} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{n+1}
+        \Aboxed{P_n &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{n+1} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{n+1}}
     \end{align*}
 	
 	\vspace{1em}
@@ -473,7 +474,7 @@
 
     \begin{align*}
         P_{365} &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{366} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{366} \\
-        &\approx 1.380 \cdot 10^{78}
+        \Aboxed{P_{365} &\approx 1.380 \cdot 10^{78}}
     \end{align*}
 
     \vspace{1em}
@@ -529,7 +530,11 @@ $$\begin{array}{c|c||c|c|c}
 		\begin{enumerate}
 			\item $x^n$
 			\item $n^{x_falling}$
+<<<<<<< HEAD
 			\item Because both A and B are distinguishable, and "onto" is the surjective case, the squeeze function can be used to partition $n$ elements into exactly $x$ groups ($\stirling{n}{x}$). Multiplying by $x!$ after partitioning gives the number of functions that map the "onto" case: $\boxed{x! \cdot \stirling{n}{x}}$
+=======
+			\item Because both A and B are distinguishable, and "onto" is the surjective case, the squeeze function can be used to partition $n$ elements into exactly $x$ groups $\stirling{n}{x}$. Multiplying by $x!$ after partitioning gives the number of functions that map the "onto" case: $\boxed{x! \cdot \stirling{n}{x}}$
+>>>>>>> c94e27d (Boxed answers)
 			\item multiset?? Dr. Brown said multisets might exist in this row. 
 			\item $ \binom{x}{n}$ 
 			\item multiset?
