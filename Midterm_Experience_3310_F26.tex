@@ -441,36 +441,45 @@
         \label{tab:example}
     \end{table}
 
-    \noindent $P_n$ will continue following this pattern shown in the total paths column. This recursive patterns is idential to the Fibonnacci Sequence, so $P_n$ can be described as $P_n = P(n-1) + P(n-2)$. 
+    \noindent 1. $P_n$ will continue following this pattern shown in the total paths column. This recursive patterns is idential to the Fibonnacci Sequence, so $P_n$ can be described as $P_n = P(n-1) + P(n-2)$. 
 
 	    \begin{align*}
-        P_n = P(n-1) + P(n-2) \\
-        r^n = r^{n-1} + r^{n-2}\\
-        r^2 = r + 1 \\
-        r^2 - r - 1 = 0 \\
-        r_{1,2} = \frac{1 \pm    \sqrt{5}}{2} \\
+        P_n &= P(n-1) + P(n-2) \\
+        r^n &= r^{n-1} + r^{n-2}\\
+        r^2 &= r + 1 \\
+        0 &=  r^2 - r - 1 \\
+        r_{1,2} &= \frac{1 \pm    \sqrt{5}}{2} \\
     \end{align*}
 
     \noindent In order to find the closed form, we will use the initial conditions to find coefficients using a system of equations: 
 
     \begin{align*}
-        1 = A(r_1)^1 + B(r_2)^1 \\
-        2 = A(r_1)^2 + B(r_2)^2\\
-        A = \frac{1+\sqrt{5}}{2\sqrt{5}}\\
-        B = -\frac{1-\sqrt{5}}{2\sqrt{5}} \\
+        1 &= A(r_1)^1 + B(r_2)^1 \\
+        2 &= A(r_1)^2 + B(r_2)^2\\
+        A &= \frac{1+\sqrt{5}}{2\sqrt{5}}\\
+        B &= -\frac{1-\sqrt{5}}{2\sqrt{5}} \\
     \end{align*}
 
     \noindent So the closed formula for $P_n$ is:
 
     \begin{align*}
-        P_n = Ar_1^{n+1}+Br_2^{n+1}
+        P_n &= \frac{1+\sqrt{5}}{2\sqrt{5}} (\frac{1+\sqrt{5}}{2} )^{n} - \frac{1-\sqrt{5}}{2\sqrt{5}} (\frac{1-\sqrt{5}}{2} )^{n} \\
+        &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{n+1} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{n+1}
     \end{align*}
 	
 	\vspace{1em}
-	
-	\noindent \underline{\hspace{5in}}
-	
-	\vspace{2em}
+
+    \noindent $P_{365}$ can now be calculated:
+
+    \begin{align*}
+        P_{365} &= (\frac{1+\sqrt{5}}{2\sqrt{5}} )^{366} -  (\frac{1-\sqrt{5}}{2\sqrt{5}} )^{366} \\
+        &\approx 1.380 \cdot 10^{78}
+    \end{align*}
+
+    \vspace{1em}
+    
+    \noindent 2. 
+    $$P_n = \sum_{i=0}^{\lfloor n/2 \rfloor}\binom{n-i}{i}.$$
 	
 	\vspace{1em}
 	
