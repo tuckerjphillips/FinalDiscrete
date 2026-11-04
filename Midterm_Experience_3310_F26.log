@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.6)  2 NOV 2026 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.6)  3 NOV 2026 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -664,6 +664,10 @@ LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ccr/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmr/bx/n' tried instead on input line 45.
 
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 47.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
@@ -973,46 +977,90 @@ LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 652.
+(Font)              using `OT1/ccr/bx/n' instead on input line 651.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--663
+Underfull \hbox (badness 10000) in paragraph at lines 653--662
 
  []
 
 [10 <./Saturator_Grid.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
-
- []
-
-
-LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 674.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 678.
+(Font)              using `OT1/ccr/bx/n' instead on input line 673.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
+
+ []
 
 
 LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
-(Font)              using `OT1/ccr/bx/n' instead on input line 680.
+(Font)              using `OT1/ccr/bx/n' instead on input line 677.
 
-[11] (Midterm_Experience_3310_F26.aux)
+
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 679.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--687
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/ccr/b/n' undefined
+(Font)              using `OT1/ccr/bx/n' instead on input line 692.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 706--713
+
+ []
+
+[11] [12] (Midterm_Experience_3310_F26.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1025,15 +1073,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  24671 strings out of 467866
  641625 string characters out of 5418326
- 1166436 words of memory out of 5000000
+ 1167436 words of memory out of 5000000
  53131 multiletter control sequences out of 15000+600000
  639561 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,118p,852b,2266s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr7.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr8.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccti10.pk> <C:\Users\tucke\AppData\Local\MiKTeX\fonts/pk/ljfour/public/concrete/dpi600\ccr10.pk><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm5.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/tucke/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Midterm_Experience_3310_F26.pdf (11 pages, 902919 bytes).
+Output written on Midterm_Experience_3310_F26.pdf (12 pages, 910235 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
+ 290 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

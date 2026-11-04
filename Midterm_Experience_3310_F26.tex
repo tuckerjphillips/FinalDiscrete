@@ -683,10 +683,37 @@ $$\begin{array}{c|c||c|c|c}
     \noindent From this data we can observe a pattern where on each power of 2 $S(n)$ resets to 1, then in between each power of 2 it counts up to the next odd number.
 
 	\bigskip
-	\noindent From this observation we can generate a function that matches the discovered pattern. We find the function below which describes the pattern. 
+	\noindent We can then make a function that describes the pattern we observe. It is: $S(n)=2\big(n-2^{\lfloor \log_2n\rfloor}\big)+1$.\\
+    
+    \noindent To explain a bit more about where this function comes from, we can consider the fact that we can represent any positive integer $n$ as $n=2^l+r$, the sum of some power of $2$ and a remainder. We can write this as $r=n-2^l$. When we do $\lfloor\log_2n\rfloor$ it gives us the largest integer that when $2$ is raised to that power the result can fit inside of $n$. Now we have $r=n-2^{\lfloor\log_2n\rfloor}$. To take the final step towards getting the equation above, we need to recall that the pattern we observed started at $1$ on each power of two, and would then count up by two, so we get $S(n)=2r+1=2\big(n-2^{\lfloor \log_2n\rfloor}\big)+1$.\\
 
-	\bigskip
-    $\boxed{S(n)=2\big(\dfrac{1}{2}+n-2^{\lfloor \log_2n\rfloor}\big)}$
+    \noindent We will now use this equation as the starting point for a proof by induction.\\
+
+    \noindent \textbf{Assumption:} $S(n)=2\big(n-2^{\lfloor \log_2n\rfloor}\big)+1$, for all $k$ such that $1\leq k \leq n$.\\
+
+    \noindent As the base case $S(1)=2\big(1-2^{\lfloor \log_2(1)\rfloor}\big)+1=2(1-1)+1=2(0)+1=1$. We know this is true because of how we defined the suicide circle to work, if it's just you, then you survive.\\
+
+    \noindent Now we consider $S(n+1)$. This produces two cases: one where $n+1$ is an even number and the other where $n+1$ is an odd number. The difference in these cases becomes important when we try to find a recurrence. For example, if we have $10$ people in the circle after we go around the circle once we will have five people, so the old 9 becomes the new 5, the old 7 becomes the new 4, 5 becomes 3, 3 becomes 2, and 1 is still 1. So for the case where $n+1$ is even, we have the recurrence $S(n+1)=S(2n)=2S(n)-1$. For the odd case, we get the recurrence $S(n+1)=S(2n+1)=2S(n)+1$.\\
+
+    \noindent The even case: $S(n+1)=S(2k)=2S(k)-1$\\
+    $=2\big(2\big(k-2^{\lfloor \log_2k\rfloor}\big)+1\big)-1$\\
+    $=2\big(2k-2^{\lfloor \log_2k\rfloor+1}\big)+2-1$\\
+    $=2\big(2k-2^{\lfloor \log_2(k)\rfloor+\log_2(2)}\big)+1$\\
+    $=2\big(2k-2^{\lfloor \log_2(2k)\rfloor}\big)+1$ using the property of log's that $\log_ab+\log_ac=\log_abc$\\
+    $2\big(2k-2^{\lfloor \log_2(2k)\rfloor}\big)+1=2\big(2k-2^{\lfloor \log_2(2k)\rfloor}\big)+1$\\
+    The first equality follows from the induction assumption, and the others from algebraic manipulations. So, $S(n+1)=S(2k)=2S(k)-1$ and we know the even case works.\\
+
+    \noindent The Odd case: $S(n+1)=S(2k+1)=2S(k)+1$\\
+    $=2\big(2\big(k-2^{\lfloor \log_2k\rfloor}\big)+1\big)+1$\\
+    $=2\big(2k-2^{\lfloor \log_2k\rfloor+1}\big)+2+1$\\
+    $=2\big(2k+1-2^{\lfloor \log_2(2k)\rfloor}\big)+1$\\
+    $=2\big(2k+1-2^{\lfloor \log_2(2k+1)\rfloor}\big)+1$. For this last step we can simply add the one because adding a $1$ inside the floor of this log won't change when $n+1$ is odd.\\
+    $=2\big(2k+1-2^{\lfloor \log_2(2k+1)\rfloor}\big)+1=2\big(2k+1-2^{\lfloor \log_2(2k+1)\rfloor}\big)+1$\\
+    The first equality follows from the induction assumption, and the others from algebraic manipulations. So, $S(n+1)=S(2k+1)=2S(k)+1$ and we now know that the odd case works.\\
+
+    \noindent With both the even and the odd case verified in this way we can say that the result therefore follows by the PSMI and $\boxed{S(n)=2\big(\dfrac{1}{2}+n-2^{\lfloor \log_2n\rfloor}\big)}.$
+    
+    \hfill $\blacksquare$
 	
 	\vspace{1em}
 	
